@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+  <title>Адаптивный слайдер</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/turtle.png" class="d-inline-block avatar" alt=""> Logo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#">Услуги</a>
+          <a class="nav-item nav-link" href="#">О компании</a>
+          <a class="nav-item nav-link" href="#">Условия</a>
+          <a class="nav-item nav-link" href="#">Контакты</a>
+          <a class="nav-item nav-link">+7 913 913 95 56</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- <div id="dws-slider" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><img src="img/slider-1.jpg" alt="Картинка 1">
+      <div class="carousel-caption">
+       <h3 class="text-uppercase">ОРГАНИЗАЦИЯ ПРОИЗВОДСТВА <br> И КОНТРОЛЬ КАЧЕСТВА ТОВАРОВ</h3>
+
+       </div>
+     </div>
+     <div class="item"><img src="img/slider-1.jpg" alt="Картинка 2">
+      <div class="carousel-caption">
+       <h3 class="text-uppercase">Анимированная прокрутка</h3>
+       <p>Aenean cursus imperdiet erat sit amet facilisis. Phasellus congue, sem in consectetur accumsan,
+       tellus risus sollicitudin mauris, quis ornare libero magna eget ex.</p>
+     </div>
+   </div>
+   <div class="item"><img src="img/slider-1.jpg" alt="Картинка 3">
+    <div class="carousel-caption">
+     <h3 class="text-uppercase">Простая установка</h3>
+     <p>Praesent dictum, orci eget eleifend auctor, urna ex dapibus odio, vitae pretium neque massa vel
+     neque. Donec et interdum diam. Morbi dignissim vestibulum mi ac viverra.</p>
+   </div>
+ </div>
+</div>
+<a class="left carousel-control" href="#dws-slider" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+ <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#dws-slider" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ <span class="sr-only">Next</span>
+</a>    
+<a href="#" class="scroll-down"> </a>
+</div> -->
+
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('img/slider-1.jpg')">
+        <div class="carousel-caption">
+          <p>ПОИСК ТОВАРОВ <br> И ПРОИЗВОДИТЕЛЕЙ <br> В КИТАЕ</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('img/slider-1.jpg')">
+        <div class="carousel-caption">
+          <p>АУДИТ И ПРОВЕРКА <br> БЛАГОНАДЕЖНОСТИ ФАБРИК <br> И ПОСТАВЩИКОВ</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('img/slider-1.jpg')">
+
+        <div class="carousel-caption">
+          <p>ОРГАНИЗАЦИЯ ПРОИЗВОДСТВА <br> И КОНТРОЛЬ КАЧЕСТВА ТОВАРОВ</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <a href="#" class="scroll-down"> </a>
+</section>
+
+<!--           Услуги -->
+<div class="container">
+  <p class="h">Услуги</p>
+  <div class="row ander-no-padding">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 feature-col">
+      <img class="img-fluid " src="img/m1.jpg">
+      <p class="text"> Доставка карго из Китая является самым удобным способом перевозки  коммерческих партий 
+        с широким ассортиментом, небольших грузов или образцов продукции. 
+      Быстрые сроки и минимум требуемых документов — вот что характеризует данную услугу.</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 feature-col">
+      <img class="img-fluid ander-affiliations-img" src="img/m2.jpg">
+      <p class="text"> Услуга «сборные грузы из Китая» подходит для участников малого и среднего бизнеса — одним словом, для тех, кто не готов ждать, пока соберется целый контейнер. 
+      В таких случаях, используя автотранспорт, можно добиться минимизации сроков и стоимости доставки, так как несколько клиентов берут на себя аренду контейнера или фуры в складчину. </p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 feature-col">
+      <img class="img-fluid ander-affiliations-img" src="img/m3.jpg">
+      <p class="text"> Доставка целых контейнеров из любого порта в Китае на условиях FOB и EXW. 
+      Мы предложим вам лучший маршрут исходя из вашего бюджета. Таможенное оформление и подготовку разрешительных документов мы берем на себя. Контейнерные перевозки из Китая в Россию — это надежно и выгодно для вас!</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 feature-col">
+      <img class="img-fluid ander-affiliations-img" src="img/m4.jpg">
+      <p class="text"> Идеально подходит для доставки образцов и тех, кому очень
+      важны сроки</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid-no-padding">
+  <div class="bg">
+    <div class="img-c" class="h-100vh">
+      <div class="container">
+        <div class="row ander-no-padding">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img class="img-s" src="img/33.png">
+            </div>
+            <div class="text-flex">
+              <p class="text-s" </p> Поиск товаров <br> и производителей <br> в Китае</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img src="img/22.png" align="center" width="50px">
+            </div>
+            <div class="text-flex">
+              <p class="text-s" </p> Аудит и проверка <br> благонадежности фабрик <br>  поставщиков
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img src="img/11.png" align="center" width="50px">
+            </div>
+            <div class="text-flex">
+              <p class="text-s" </p> Организация производства <br> и контроль качества <br> товаров</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img class="img-s" src="img/33.png">
+            </div>
+            <div class="text-flex">
+              <p class="text-s"> Выкуп товаров <br> с Китайских сайтов</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img class="img-s" src="img/33.png">
+            </div>
+            <div class="text-flex">
+              <p class="text-s"> Доставка грузов <br> и Таможенное оформление </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="img-s-flex">
+              <img class="img-s" src="img/33.png">
+            </div>
+            <div class="text-flex">
+              <p class="text-s"> Организация бизнес тура в Китай, <br> сопровождение на рынках и выставках </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <p class="h">О компании</p>
+  <div class="row ander-no-padding">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <img class="img-fluid " src="img/about_co.jpg">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <p class="text"> Компания Name это Ваш надежный партнер в Китае.
+        Мы лидеры по 
+        предоставлению качественных услуг в Китае.
+        Мы оказываем помощь 
+        в решении любых вопросов, связанных с поиском и доставкой товаров 
+        из Китая.
+        По Вашему заказу мы можем найти и доставить любую категорию 
+        товаров — оборудование, мебель, строительные материалы, спецтехника, 
+        одежда или товары первой необходимости.
+        За несколько лет работы мы
+        накопили большой опыт в этой области! Наша компания официально 
+        зарегистрирована на территории России и Китая.
+      </p>
+    </div>
+  </div>
+</div>
+
+<p class="text-h">Мы на связи всегда <span class="colortext">24 часа</span> в сутки и <span class="colortext">7 дней</span> в неделю!</p>
+
+
+<div class="container">
+  <div class="row ander-no-padding">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+      <div class="img-flex">
+        <img class="img-size" src="img/ma.png">
+      </div>
+      <div class="img-flex">
+        <p class="delivery"> <b>Авиа 7-14 дней</b> <br>
+        (от 3,5$ авиа-фрахт) </p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+      <div class="img-flex">
+        <img class="img-size" src="img/mt.png">
+      </div>
+      <div class="img-flex">
+        <p class="delivery"> <b>Ж/Д 18-25 дней</b> <br>
+        (от 1,2$ ж/д-фрахт) </p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+      <div class="img-flex">
+        <img class="img-size" src="img/mc.png">
+      </div>
+      <div class="img-flex">
+        <p class="delivery"> <b>Контейнерная <br>
+        доставка 30-45 дней</b> <br>
+      (от 1$)</p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+    <div class="img-flex">
+      <img class="img-size" src="img/mbox.png">
+    </div>
+    <div class="img-flex">
+      <p class="delivery"> Принимаем грузы <br> <b>от 1кг</b>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid-no-padding">
+  <div class="bg-gray">
+    <p class="stock">
+      Склады приема грузов в следующих 
+      городах Китая: <br><b>Гуанчжоу, Пекин, Шэнчжэнь, Иу</b>
+    </p>
+  </div>
+</div>
+
+<p class="text-c"> Оплата производится в рублях на карту Сбербанк по внутреннему курсу компании 
+  на день оформления заказа.
+</p>
+
+<div class="container">
+  <div class="brd">
+    <p class="text-c"> <b>Для заявки на перевозку Вам необходимо предоставить информацию о грузе:</b></p>
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-12 col-12">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+  <div class="bg-yellow">
+    <div class="img-flex">
+    <p class="delivery">Вид груза</p>
+  </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+  <div class="bg-yellow">
+    <div class="img-flex">
+    <p class="delivery">Объем, вес</p>
+  </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+  <div class="bg-yellow">
+    <div class="img-flex">
+    <p class="delivery">Город отгрузки в Китае <br>
+    и город получателя в России</p>
+  </div>
+  </div>
+</div>
+</div>
+<p class="text-c">И отправить запрос на просчет.</p>
+</div>
+</div>
+
+<div class="container">
+  <p class="h">Контакты</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<!--           <script>
+            $('.carousel').carousel({
+              interval: 7000
+            })
+          </script>     -->
+          </html>

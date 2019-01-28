@@ -1,0 +1,258 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: open-sans, sans-serif;
+}
+
+.carousel-inner p {
+	font-size: 48px;
+	font-weight: 700;
+/*	background-color: rgba(30, 29, 29, 0.1);*/
+/*	padding: 20px;*/
+	animation: anim-P 1.6s ease-out;
+/*	margin-bottom: 20%;*/
+
+}    
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	background-size: cover;
+}
+
+.carousel-caption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15%;
+}
+
+@keyframes anim-P {
+ from {
+	opacity: 0;
+	transform: translateX(2000px);
+ }
+ to {
+	opacity: 1;
+	transform: translateX(0);
+ }
+}    
+
+
+@media (max-width: 575px) {
+	.carousel-caption p {
+	font-family: open sans, sans-serif;
+	font-size: 1rem;
+	margin-bottom: 70%;
+	}
+	}
+
+.scroll-down {
+	position: absolute;
+	text-align: center;
+	width: 22px;
+	height: 22px;
+	border-style: solid;
+	border-color: #fff;
+	border-width:  0 3px 3px 0;
+	transform: rotate(45deg);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 30px;
+	z-index: 2;
+	animation: mouse-anim 1s cubic-bezier(0, 0, 0.2, 1) 0s infinite;
+}
+
+.fa-angle-down :before{
+	content: "\f107";
+}
+
+@keyframes mouse-anim{
+	0% {
+		bottom: 10vh;
+	}
+	50% {
+		bottom: 5vh;
+	}
+	100% {
+		bottom: 10vh;
+	}
+}
+
+.h {
+	text-align: center;
+	font-size: 24px;
+	font-family: open sans, sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.feature-col {
+	font-size: 14px;
+	padding: 15px 15px 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.feature-col, .feature-col:after {
+  -moz-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  -webkit-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  -o-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  -ms-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+}
+
+.feature-col:after {
+	content: '';
+	background: #EFB900;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.feature-col:hover:after {
+	height: 100%;
+}
+
+.flex-container {
+	display: block;
+}
+
+.ander-no-padding {
+	padding: 0;
+}
+
+.bg {
+/*	background-color: #fff;*/
+
+	width: 100%;
+	height: 80%;
+/*	margin-bottom: 20px;*/
+	margin-top: 20px; 
+	z-index: 2;
+}
+
+.img-c {
+	background-image: url(../img/c.jpg);
+	background-attachment: fixed;
+	background-position: 0 0;
+	background-color: rgba(0,123,255,0.4);
+	height: 100%;
+}
+
+
+.h-100vh {
+	height: 100vh;
+}
+
+.text {
+	text-align: left;
+	font-size: 14px;
+	font-family: open sans, sans-serif;
+}
+
+.text-h {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: open sans, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.colortext {
+	color: #EFB900;
+}
+
+.bg-gray {
+	background-color: #3D414C;
+	text-align: center;
+	height: 100%;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.stock {
+	text-align: center;
+	font-size: 16px;
+	font-family: open sans, sans-serif;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.text-c {
+	text-align: center;
+	font-size: 16px;
+	font-family: open sans, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.delivery {
+	text-align: center;
+	font-size: 14px;
+	font-family: open sans, sans-serif;
+	margin-top: 10px;
+}
+
+.img-size {
+	height: 130px;
+}
+@media (max-width: 575px) {
+	.img-size {
+	display:none;
+	}
+	.img-flex {
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	}
+	}
+
+.img-s {
+	height: 50px;
+}
+.img-s-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.text-s {
+	text-align: center;
+	font-size: 16px;
+	font-family: open sans, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.text-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.brd {
+	border: 4px solid #EFB900;
+}
+
+.bg-yellow {
+	background-color: #EFB900;
+/*	margin: 5px;*/
+	height: 5em;
+	width: 100%;
+
+}
